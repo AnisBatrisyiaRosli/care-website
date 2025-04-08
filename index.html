@@ -1,51 +1,120 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title> Care </title>
-    <link rel="stylesheet" href="css\styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARE.org Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
- 
 
-<header>
-<aside class="col-span-4">
-    <p><img src="care.svg" alt="Care Logo"></p>
-</aside>
-</header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="images/care.svg" alt="CARE Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Our Work</a></li>
+        <li><a href="howtohelp.html">How To Help</a></li>
+        <li><a href="newsandstories.html">News & Stories</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="btn-orange">Donate</a>
+  </header>
 
-<nav>
-<ul class="menu-items">
-    <a href="index.html">Our Work</a></li>
-    <a href="howtohelp.html">How To Help</a></li>
-    <a href="newsandstories.html">News & Stories</a></li>
-    <a href="aboutus.html">About Us</a></li>
-    <a href="donate.html">Donate</a></li>
-</ul>
-</nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your gift – A family's Survival</h1>
+      <p>Provide life-saving aid to families affected by crisis and conflict.</p>
+      <a href="#" class="btn-orange">Give Now</a>
+    </div>
+    <img src="images/hero-image.webp" alt="Hero Image" class="hero-img">
+  </section>
 
-<section class="col-span-8">
-    <h2>Your gift is DOUBLED to save lives!</h2>
-    <p>For a limited time - gifts are matched 2X to provide food, health supplies, and shelter to families in crisis. Give now!</p>
-    <h3>CARE has been a trusted leader in humanitarian assistance for 80 years, and we won’t turn our backs on those in crisis.</h3>
-    <h3>Every day, together with you, CARE saves lives and helps millions of people find the way to a better life worldwide.</h3>
-    
+  <!-- Circle Image Row -->
+<section class="col-span-2">
+    <div class="circle-item">
+      <img src="images/pic1.png" alt="Efficient" class="circle">
+      <h3>We’re efficient</h3>
+    <p>Your donation does more when you give it to CARE. 90% of the money CARE spends goes toward our lifesaving work that saves and transforms lives.</p>
+</div>
 </section>
 
-<aside class="col-span-4">
-  <p><img src="pic1.png" alt="We're efficient"></p>
-  <h2> We're efficient </h2>
-  <p> Your donation does more when you give it to CARE. 90% of the money CARE spends goes toward our lifesaving work that saves and transforms lives.</p>
-  <h2><img src="pic2.png" alt="We're far-reaching"></h2>
-  <p> We are one of the largest networks of humanitarians in the world, working in 121 countries.</p>
-  <h2><img src="pic3.png" alt="We're locally led"></h2>
-  <p> 96% of our staff are from the countries or regions where we work. This means we can respond as soon as emergencies happen, and we stay long after the TV cameras leave.</p>
-  <h2><img src="pic4.png" alt="We're trusted"></h2>
-  <p> With nearly 80 years of service, CARE has a history of building community trust. We listen to what people want and develop solutions they need.</p>
-</aside>
 
+<section class="col-span-2">
+    <div class="circle-item">
+      <img src="images/pic2.png" alt="Far Reaching">
+      <h3>We’re far-reaching.</h3> 
+      <p>We are one of the largest networks of humanitarians in the world, working in 121 countries.</p>
+ </div>
+</section>
 
+<section class="col-span-2">
+    <div class="circle-item">
+      <img src="images/pic3.png" alt="Local Led">
+      <h3>We’re locally led.</h3>
+      <p>96% of our staff are from the countries or regions where we work. This means we can respond as soon as emergencies happen, and we stay long after the TV cameras leave.</p>    
+</div>
+</section>
+
+<section class="col-span-2">
+    <div class="circle-item">
+      <img src="images/pic4.png" alt="Trusted">
+      <h3>We’re trusted.</h3> 
+      <p>With nearly 80 years of service, CARE has a history of building community trust. We listen to what people want and develop solutions they need.</p>
+</div>
+</section>
+
+  <!-- News Section -->
+  <section class="news">
+    <h2>Latest News & Stories</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="news1.jpg" alt="">
+        <h3>Story Title One</h3>
+        <p>Short description about the story goes here.</p>
+      </div>
+      <div class="news-card">
+        <img src="news2.jpg" alt="">
+        <h3>Story Title Two</h3>
+        <p>Short description about the story goes here.</p>
+      </div>
+      <div class="news-card">
+        <img src="news3.jpg" alt="">
+        <h3>Story Title Three</h3>
+        <p>Short description about the story goes here.</p>
+      </div>
+    </div>
+    <a href="#" class="btn-orange">Read All Stories</a>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Here's how you can help!</h2>
+    <div class="cta-grid">
+      <div><img src="help1.jpg" alt=""><p>Become a Monthly Donor</p></div>
+      <div><img src="help2.jpg" alt=""><p>Speak Out! Advocate for CARE</p></div>
+      <div><img src="help3.jpg" alt=""><p>Give a Gift</p></div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Sign up for our mailing list.</h2>
+    <form>
+      <input type="text" placeholder="First Name">
+      <input type="email" placeholder="Email">
+      <button type="submit">SUBMIT</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© CARE.org. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
