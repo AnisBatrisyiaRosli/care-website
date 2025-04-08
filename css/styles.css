@@ -1,0 +1,81 @@
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*** Layout ***/
+.container {
+    background-color: white;
+    display: grid; 
+    grid-gap: 1.5em; 
+    grid-template-columns: repeat(12, 1fr);
+    width: min(95%, 75em);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Desktop Layout */ 
+@media screen and (min-width: 40em) {
+    .col-span-8{
+        grid-column: span 8;
+    }
+    .col-span-4{
+        grid-column: span 4;
+    }
+    }
+
+    header {
+        text-align: left;
+        background-color:#fff;
+        color: #fff;
+        padding: 30px 40px; 
+    }
+
+h2 {
+    font-size: 80px;
+    justify-content:baseline
+    }
+
+aside h4 {
+    font-size: 20px;
+    }
+
+aside img {
+    width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid #c76969;
+}
+
+.circle {
+    width: 20px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid white;
+}
+
+/* navigation */
+nav {
+    background-color: white;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top: 0; 
+  }
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+   
+  nav li {
+    margin: 0 3em;
+} 
