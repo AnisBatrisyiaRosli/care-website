@@ -1,6 +1,6 @@
 /* Font & Base Styles */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: arial, sans-serif;
     font-size: 16px;
     margin: 0;
     color: #222;
@@ -25,27 +25,40 @@ body {
 .container > * {
 grid-column: span 12;
 }
+
+
   
-  /* Navbar */
- /**** Navigation Using Flexbox ****/
+ /* Navbar */
 nav {
     background-color: white;
     padding: 0 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Align logo and menu to the left */
+    align-items: center; /* Vertically align content */
     position: sticky;
-    top: 0; 
+    top: 0;
+    width: 100%; /* Ensure the navbar spans the full width */
 }
+
+/* Logo */
+nav .logo {
+    max-width: 100px; /* Adjust this to your preferred logo size */
+    margin-right: 5rem; /* Space between logo and menu items */
+}
+
+/* Menu Items */
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap; /* Ensures items stay in a horizontal row */
 }
+
 nav li {
     margin: 0 0.5rem;
 }
+
 nav a:link, nav a:visited {
     color: black;
     text-decoration: none;
@@ -53,42 +66,43 @@ nav a:link, nav a:visited {
     padding: 1rem;
     transition: ease-in-out 250ms;
 }
+
 nav a:hover {
     background-color: white;
     color: #f48024;
 }
 
-  
-  .navbar a.btn-orange {
+/* Button Styling for Donate Button */
+.navbar a.btn-orange {
     background-color: #f48024;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-  }
+    margin-left: auto; /* Push button to the far right */
+}
 
+/* Ensure container is spanning full width */
+.container {
+    width: 100%;
+}
   
-  /* Hero */
+  /* Hero Section */
   .hero {
     display: flex;
     align-items: center;
-    padding: 50px 20px;
+    justify-content: space-between;
+    padding: 50px 80px;
     gap: 50px;
-    width: 100%;
+    max-width: 1200%;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
-  
-  .hero-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 100px;  
-    margin: 0 auto;     
-  }
+
 
   .hero-text {
     position: absolute;
     top: 50%;
     left: 5%;
-    transform: translateY(-50%);
     color: white;
     max-width: 50%;
     padding: 20px;
@@ -97,45 +111,74 @@ nav a:hover {
   
   .hero-text h1 {
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .hero-text p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .hero-img {
     flex: 1;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
     
   }
-  
-  /* Circle Row */
-  .circle-row {
+
+  .hero-description {
+    text-align: left;
+    padding: 0 270px; /* Keep this as it is for left and right padding */
+    box-sizing: border-box;
+    margin-bottom: 0px; /* Set to 0px for no space below the description */
+    font-size: 20px;
+}
+
+.circle-row {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 50px 20px;
-    background-color: #f7f7f7;
-  }
-  
-  .circle-item {
+    padding-top: 0px; /* Remove top padding or set to 0px to bring images closer */
+    padding-bottom: 0px; /* Remove bottom padding or set to 0px */
+}
+
+
+.circle-row .circle-item:nth-child(2) img {
+    width: 190px;  /* Adjust the size of the 2nd image */
+    height: 190px; /* Adjust the height accordingly */
+}
+
+.circle-row .circle-item:nth-child(3) img {
+    width: 190px;  /* Adjust the size of the 3rd image */
+    height: 190px; /* Adjust the height accordingly */
+}
+
+.circle-row .circle-item:nth-child(4) img {
+    width: 190px;  /* Adjust the size of the 4th image */
+    height: 190px; /* Adjust the height accordingly */
+}
+
+.circle-item {
     text-align: center;
-    width: 180px;
-  }
-  
-  .circle-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 200px; /* No change needed here unless adjusting circle size */
+}
+
+.circle-item h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.circle-item img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%; /* Keeps the image circular */
     object-fit: cover;
-    margin-bottom: 15px;
-  }
-  
+    margin-bottom: 15px; /* You can reduce this margin if needed */
+}
   /* News Section */
   .news {
     padding: 60px 50px;
@@ -184,9 +227,9 @@ nav a:hover {
     height: 150px;
     object-fit: cover;
     border-radius: 2px;
+    display: block;
   }
-  
-  
+
 
   /* Newsletter */
   .newsletter {
