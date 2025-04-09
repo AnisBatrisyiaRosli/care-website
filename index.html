@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CARE.org Homepage</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
 
   <!-- Navbar -->
+   <div class="container">
   <header class="navbar">
     <img src="images/care.svg" alt="CARE Logo" class="logo">
     <nav>
-      <ul>
+      <ul class="menu-items">
         <li><a href="index.html">Our Work</a></li>
         <li><a href="howtohelp.html">How To Help</a></li>
         <li><a href="newsandstories.html">News & Stories</a></li>
@@ -24,11 +25,15 @@
     <a href="#" class="btn-orange">Donate</a>
   </header>
 
+</div>
+
+
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Your gift – A family's Survival</h1>
-      <p>Provide life-saving aid to families affected by crisis and conflict.</p>
+      <h1>Your gift is DOUBLED to save lives!</h1>
+      <p>For a limited time - gifts are matched 2X to provide food, 
+        health supplies, and shelter to families in crisis. Give now!</p>
       <a href="#" class="btn-orange">Give Now</a>
     </div>
     <img src="images/hero-image.webp" alt="Hero Image" class="hero-img">
@@ -73,31 +78,48 @@
     <h2>Latest News & Stories</h2>
     <div class="news-grid">
       <div class="news-card">
-        <img src="news1.jpg" alt="">
-        <h3>Story Title One</h3>
-        <p>Short description about the story goes here.</p>
+        <img src="images/news1.png" alt="">
+        <h3>Myanmar earthquake: CARE delivers assistance as death toll climbs</h3>
+        <p>CARE teams are racing to provide relief to the people most impacted by the recent 7.7 magnitude earthquake in Myanmar.</p>
       </div>
+
       <div class="news-card">
-        <img src="news2.jpg" alt="">
-        <h3>Story Title Two</h3>
-        <p>Short description about the story goes here.</p>
+        <img src="images/news2.png" alt="">
+        <h3>Escalating tensions in South Sudan deepens humanitarian crisis and erodes progress for women and girls</h3>
+        <p>Escalating tensions in South Sudan threaten to worsen the dire humanitarian crisis and eroding progress towards stability made since the 2018 peace agreement. The country is in the grips of a continuing cholera crisis while starvation threatens millions of lives.</p>
       </div>
+
       <div class="news-card">
-        <img src="news3.jpg" alt="">
-        <h3>Story Title Three</h3>
-        <p>Short description about the story goes here.</p>
+        <img src="images/news3.png" alt="">
+        <h3>CNN: CARE’s Deepmala Mahla speaks on the earthquake’s toll in Myanmar</h3>
+        <p>CARE's Chief Humanitarian Officer, Deepmala Mahla, speaks to CNN on the humanitarian situation in Myanmar after the country is hit by a 7.7 magnitude earthquake that killed thousands of people.</p>
       </div>
     </div>
-    <a href="#" class="btn-orange">Read All Stories</a>
+
+    <a href="#" class="btn-orange">See All Stories</a>
   </section>
 
   <!-- Call to Action -->
   <section class="cta">
     <h2>Here's how you can help!</h2>
     <div class="cta-grid">
-      <div><img src="help1.jpg" alt=""><p>Become a Monthly Donor</p></div>
-      <div><img src="help2.jpg" alt=""><p>Speak Out! Advocate for CARE</p></div>
-      <div><img src="help3.jpg" alt=""><p>Give a Gift</p></div>
+        <div class="cta-card">
+      <div><img src="images/help1.png" alt="">
+      <h3>Become a Monthly Donor</h3>
+      <p>When you give to CARE, you fight against the barriers that women and girls face every day.</p>
+    </div>
+
+    <div class="cta-card">
+      <div><img src="images/help2.png" alt="">
+        <h3>Speak Out! Advocate for CARE</h3>
+        <p>Our advocacy protects international assistance that helps end poverty, feed more people, and support women and girls.</p>
+    </div>
+
+    <div class="cta-card"></div>
+      <div><img src="images/help3.png" alt="">
+        <h3>Give a Gift</h3>
+        <p>Help those who are enduring conflict and hunger worldwide</p>
+    </div>
     </div>
   </section>
 
