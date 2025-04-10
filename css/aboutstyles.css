@@ -1,0 +1,108 @@
+/* Font & Base Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #222;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  background-color: white;
+  display: grid; 
+  grid-gap: 1.5em; 
+  grid-template-columns: repeat(12, 1fr);
+  width: min(95%, 75em);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container > * {
+grid-column: span 12;
+}
+
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding-block: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img { 
+  max-width: 200px;
+}
+
+nav {
+  background-color: white;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  width: 100%; /* Ensure the navbar spans the full width */
+}
+
+/* Logo */
+nav .logo {
+  max-width: 20px; 
+  margin-right: 5rem; /* Space between logo and menu items */
+
+}
+
+/* Menu Items */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap; /* Ensures items stay in a horizontal row */
+  text-align: right;
+}
+
+nav li {
+  margin: 0 0.5rem;
+  text-align: right;
+}
+
+nav a:link, nav a:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding: 1rem;
+  transition: ease-in-out 250ms;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #f48024;
+}
+
+/* Button Styling for Donate Button */
+.navbar a.btn-orange {
+  background-color: #f48024;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: auto; /* Push button to the far right */
+}
+
+/* Ensure container is spanning full width */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}

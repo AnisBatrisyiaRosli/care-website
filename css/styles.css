@@ -115,7 +115,6 @@ nav a:hover {
     padding-inline: 20px;
   }
 
-
   .hero-text {
     position: absolute;
     top: 50%;
@@ -154,6 +153,10 @@ nav a:hover {
     font-size: 20px;
 }
 
+
+
+
+}
 .circle-row {
     display: flex;
     justify-content: center;
