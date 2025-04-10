@@ -1,4 +1,7 @@
 /* Font & Base Styles */
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: arial, sans-serif;
     font-size: 16px;
@@ -28,13 +31,29 @@ grid-column: span 12;
 
 
   
+
+
  /* Navbar */
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding-block: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img { 
+    max-width: 200px;
+}
+
+
 nav {
     background-color: white;
     padding: 0 1rem;
     display: flex;
-    justify-content: space-between; /* Align logo and menu to the left */
-    align-items: center; /* Vertically align content */
+    justify-content: space-between; 
+    align-items: center; 
     position: sticky;
     top: 0;
     width: 100%; /* Ensure the navbar spans the full width */
@@ -42,8 +61,9 @@ nav {
 
 /* Logo */
 nav .logo {
-    max-width: 100px; /* Adjust this to your preferred logo size */
+    max-width: 20px; /* Adjust this to your preferred logo size */
     margin-right: 5rem; /* Space between logo and menu items */
+
 }
 
 /* Menu Items */
@@ -53,10 +73,12 @@ nav ul {
     list-style: none;
     display: flex;
     flex-flow: row nowrap; /* Ensures items stay in a horizontal row */
+    text-align: right;
 }
 
 nav li {
     margin: 0 0.5rem;
+    text-align: right;
 }
 
 nav a:link, nav a:visited {
@@ -78,34 +100,34 @@ nav a:hover {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-left: auto; /* Push button to the far right */
+    margin-right: auto; /* Push button to the far right */
 }
 
 /* Ensure container is spanning full width */
 .container {
     width: 100%;
+    max-width: 1200px;
+    padding-inline: 20px;
+    margin-inline: auto;
 }
   
   /* Hero Section */
   .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 80px;
-    gap: 50px;
-    max-width: 1200%;
+    position: relative;
+    max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    padding-inline: 20px;
   }
 
 
   .hero-text {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 0;
+    transform: translateY(-50%);
     color: white;
-    max-width: 50%;
-    padding: 20px;
+    max-width: 500px; /* ensure that the text consize */
+    padding-inline: 60px;
     border-radius: 8px;
   }
   
@@ -141,28 +163,28 @@ nav a:hover {
     justify-content: center;
     gap: 40px;
     padding-top: 0px; /* Remove top padding or set to 0px to bring images closer */
-    padding-bottom: 0px; /* Remove bottom padding or set to 0px */
+    padding-bottom: 0px; 
 }
 
 
 .circle-row .circle-item:nth-child(2) img {
-    width: 190px;  /* Adjust the size of the 2nd image */
-    height: 190px; /* Adjust the height accordingly */
+    width: 190px;  
+    height: 190px; 
 }
 
 .circle-row .circle-item:nth-child(3) img {
-    width: 190px;  /* Adjust the size of the 3rd image */
-    height: 190px; /* Adjust the height accordingly */
+    width: 190px;  
+    height: 190px; 
 }
 
 .circle-row .circle-item:nth-child(4) img {
-    width: 190px;  /* Adjust the size of the 4th image */
-    height: 190px; /* Adjust the height accordingly */
+    width: 190px;  
+    height: 190px; 
 }
 
 .circle-item {
     text-align: center;
-    width: 200px; /* No change needed here unless adjusting circle size */
+    width: 200px; 
 }
 
 .circle-item h3 {
@@ -177,14 +199,34 @@ nav a:hover {
     height: 170px;
     border-radius: 50%; /* Keeps the image circular */
     object-fit: cover;
-    margin-bottom: 15px; /* You can reduce this margin if needed */
+    margin-bottom: 15px; 
 }
+
   /* News Section */
   .news {
     padding: 60px 50px;
     text-align: center;
   }
-  
+
+  .news-background {
+    background-color: #f8f8f5;  /* Beige background color */
+    padding: 20px 50px;  /* Adjust padding to control the size of the background */
+    max-width: 80%;      /* Control the width of the background */
+    margin: 0 auto;      /* Center the background */
+    right: 10%;           /* Move the background to the right */
+  }
+
+  .news h2 {
+    font-size: 65px; 
+  }
+
+  .underline {
+    width: 100px;  /* Slightly longer than a regular rectangle */
+    height: 20px;   /* Smaller height */
+    background-color: #f48024;
+    margin: 2px auto;  /* Adds space above and centers it */
+  } 
+
   .news-grid {
     display: flex;
     gap: 30px;
@@ -204,6 +246,25 @@ nav a:hover {
     border-radius: 2px;
   }
   
+  .see-all-stories {
+    background-color: #f8f8f5;  /* White background */
+    color: black;             /* Black text color */
+    padding: 15px 30px;       /* Increase padding */
+    text-decoration: none;    /* Remove underline */
+    border: 4px solid #f48024; /* Orange border */
+    border-radius: 1px;       /* Rounded corners */
+    font-size: 18px;          /* Font size */
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .see-all-stories:hover {
+    background-color: #f48024; /* Orange background on hover */
+    color: white;             /* White text color on hover */
+    border: 4px solid #f48024; /* Keep the orange border on hover */
+  }
+
   /* CTA Section */
   .cta {
     padding: 60px 50px;
@@ -216,7 +277,17 @@ nav a:hover {
     justify-content: center;
     margin-top: 30px;
   }
+  .cta h2 {
+    font-size: 70px;
+    margin-bottom: 5px;
+  }
   
+  .cta-description {
+    font-size: 22px;  
+    margin-top: 5px; 
+  }
+
+
   .cta-card {
     width: 250px;
     text-align: left;
@@ -230,12 +301,47 @@ nav a:hover {
     display: block;
   }
 
+  /* Tackle Poverty*/
+  .TP {
+    background-color: #f8f8f5;
+    border-radius: 2px;
+    position: relative;
+    left: -70px;
+    padding: 20px 0;
+    text-align: left;
+  }
+  
+  .TP-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+  .TP-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* space between image and text */
+  }
+  
+  .TP-flex img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 1px;
+    margin-left: -50px; 
+  }
+  
+  .TP-text {
+    flex: 1;
+  }
+
+
+
 
   /* Newsletter */
   .newsletter {
     padding: 60px 50px;
-    background-color: #f5f5f5;
     text-align: center;
+    font-size: 30px;
   }
   
   .newsletter form {
@@ -246,20 +352,76 @@ nav a:hover {
     flex-wrap: wrap;
   }
   
+  .newsletter p {
+    font-size: 12px; 
+    text-align: center;
+  }
   .newsletter input {
+    width: 250px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  .newsletter button {
-    padding: 10px 20px;
-    background-color: #f48024;
-    color: white;
-    border: none;
-    border-radius: 4px;
+  /* Style for the "Submit" button */
+.newsletter button {
+    width: 250px;
+    background-color: #f8f8f5;  
+    color: black;             /* Black text color */
+    padding: 15px 30px;       /* Increase padding */
+    text-decoration: none;    /* Remove underline */
+    border: 4px solid #f48024; /* Orange border */
+    border-radius: 1px;       /* Rounded corners */
+    font-size: 18px;          /* Font size */
+    display: inline-block;
+    margin-top: 20px;
   }
+  
+  /* Hover effect for the "Submit" button */
+  .newsletter button:hover {
+    background-color: #f48024; /* Orange background on hover */
+    color: white;             /* White text color on hover */
+    border: 4px solid #f48024; /* Keep the orange border on hover */
+  }
+ 
+  
+
+/* problem here this one wont show */
+/* Hero Section 2 */
+.hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+    gap: 50px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.hero-text2 {
+    color: white;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-text2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text2 p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
   
   /* Footer */
   footer {

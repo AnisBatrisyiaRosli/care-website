@@ -11,25 +11,25 @@
 <!-- Navbar -->
 <div class="container">
     <header class="navbar">
-      <!-- Logo -->
-      <img src="images/care.svg" alt="CARE Logo" class="logo">
+
+<!-- Logo -->
+    <img src="images/care.svg" alt="CARE Logo" class="logo">
   
-      <!-- Navigation Menu -->
-      <nav>
+<!-- Navigation Menu -->
+    <nav>
         <ul class="menu-items">
           <li><a href="index.html">Our Work</a></li>
           <li><a href="howtohelp.html">How To Help</a></li>
           <li><a href="newsandstories.html">News & Stories</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
+    </ul>
+    </nav>
   
-      <!-- Donate Button -->
-      <a href="#" class="btn-orange">Donate</a>
+<!-- Donate Button -->
+    <a href="#" class="btn-orange">Donate</a>
     </header>
   </div>
-
 
   <!-- Hero Section -->
   <section class="hero">
@@ -84,7 +84,9 @@
 
   <!-- News Section -->
   <section class="news">
+    <div class="news-background"> <!-- Wrapper for the background color -->
     <h2>Latest News & Stories</h2>
+    <div class="underline"></div> <!-- The rectangle shape -->
     <div class="news-grid">
       <div class="news-card">
         <img src="images/news1.png" alt="">
@@ -105,12 +107,14 @@
       </div>
     </div>
 
-    <a href="#" class="btn-orange">See All Stories</a>
+    <a href="#" class="btn see-all-stories">SEE ALL STORIES &rarr;</a>
   </section>
 
   <!-- Call to Action -->
 <section class="cta">
     <h2>Here's how you can help!</h2>
+    <p class="cta-description">From advocacy to donating money, there are many ways you can help.</p>
+    <div class="underline"></div> <!-- The rectangle shape -->
     <div class="cta-grid">
       
       <div class="cta-card">
@@ -134,14 +138,33 @@
     </div>
   </section>
 
+<!--Tackle Poverty-->
+<section class="TP">
+<div class="TP-content">
+<div class="TP-flex">
+    <img src="images/tackle.png" alt="Tackle Poverty Image">
+<div class="TP-text">
+    <h2>Here's how we tackle poverty.</h2>
+    <p>CARE works on the root causes of poverty – hunger, health care, education, 
+        and more – to make the biggest impact possible for women and girls around 
+        the world.</p>
+    <p>Learn more about our work</p>
+</div>
+    </div>
+    </div>
+  </section>
+
   <!-- Newsletter -->
   <section class="newsletter">
     <h2>Sign up for our mailing list.</h2>
     <form>
       <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
       <input type="email" placeholder="Email">
       <button type="submit">SUBMIT</button>
     </form>
+    <p>Text CARE to 227387 to stay connected.</p>
+    <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
   </section>
 
   <!-- Footer -->
