@@ -154,9 +154,6 @@ nav a:hover {
 }
 
 
-
-
-}
 .circle-row {
     display: flex;
     justify-content: center;
@@ -179,6 +176,7 @@ nav a:hover {
 .circle-row .circle-item:nth-child(4) img {
     width: 190px;  
     height: 190px; 
+    
 }
 
 .circle-item {
@@ -332,8 +330,6 @@ nav a:hover {
   .TP-text {
     flex: 1;
   }
-
-
 
 
   /* Newsletter */
