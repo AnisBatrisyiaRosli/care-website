@@ -171,30 +171,36 @@ nav a:hover {
   margin-right: auto;
 }
 .square h3 {
-  font-size: 60px;
+  font-size: 30px;
   margin-bottom: 5px;
 }
 
 .square-card {
-  width: 250px;
+  width: 400px;
   text-align: left;
 }
 
 .square-card img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   border-radius: 2px;
 }
 
 
-
+.hero-description-2 {
+  text-align: center;
+  padding: 0 200px; /* Keep this as it is for left and right padding */
+  box-sizing: border-box;
+  margin-top: 40px; /* Set to 0px for no space below the description */
+  font-size: 30px;
+}
 
 
 /* Second Square section */
 .square-2 {
   padding: 60px 50px;
-    text-align: center;
+  text-align: center;
   }
   
 .square-2-grid {
@@ -223,3 +229,132 @@ nav a:hover {
 }
 
 
+  /* Last Hero Section */
+  .last-hero {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+
+  .last-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px; /* ensure that the text consize */
+    padding-inline: 60px;
+    border-radius: 8px;
+  }
+  
+  .last-hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .last-hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .last-hero-img {
+    flex: 1;
+    max-width: 105%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    
+  }
+
+/* Footer */
+.footer {
+  padding: 40px;
+  background-color: #fff;
+  color: #1a132f;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-description {
+  max-width: 300px;
+}
+
+.footer-center {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #1a132f;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  margin: 8px 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-bottom-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1a132f;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+
+}
+
+
+
+    /* Buttons */
+    .btn-orange {
+      background-color: #f48024;
+      color: white;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
